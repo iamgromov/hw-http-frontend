@@ -1,0 +1,291 @@
+body {
+    background-color: beige;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 150px;
+    padding: 10px 15px;
+    display: block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.ticket-form {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    background-color: #ededed;
+    border-radius: 24px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+ }
+  
+.ticket-form__title {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.ticket-form__label {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+  
+.ticket-form__input-name {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+  
+.ticket-form__input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    background-color: #ededed;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+  
+.ticket-form__input:focus {
+    outline: none;
+}
+
+  
+.ticket-form__textarea {
+    padding: 15px;
+    resize: none;
+}
+  
+.ticket-form__btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.ticket-form__btn-cancel {
+    margin-right: 15px;
+}
+.ticket {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    color: darkslategray;
+    background-color: #ededed;
+    border-radius: 24px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ticket:hover {
+    opacity: 0.8;
+}
+
+.ticket__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ticket__card-check-label {
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.ticket__card-custom-check {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(6640a5971f37b6add4e5.svg) center / cover no-repeat;
+}
+
+.ticket__card-custom-check:hover {
+    opacity: 0.8;
+}
+
+.ticket__card-checkbox:checked+.ticket__card-custom-check {
+    background: url(fdec783f1a9b621629a1.svg) center / cover no-repeat;
+}
+
+.ticket__card-name {
+    display: block;
+    width: 50%;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+.ticket__card-date {
+    display: block;
+    font-size: 20px;
+}
+
+.ticket__card-btn-block {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.ticket__card-edit {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background: url(ecffea4c70bc0099d7d5.svg) center/20px 20px no-repeat;
+    cursor: pointer;
+}
+
+.ticket__card-edit:hover {
+    opacity: 0.8;
+}
+
+
+.ticket__card-delete {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(24de5524293b7cca9740.svg) center/20px 20px no-repeat;
+    cursor: pointer;
+}
+
+.ticket__card-delete:hover {
+    opacity: 0.8;
+}
+
+
+.ticket__description {
+    max-width: 50%;
+    margin-left: 140px;
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: 0.1s grid-template-rows ease-in-out;
+    font-size: 14px;
+    word-break: break-all;
+}
+  
+.ticket__description.open {
+    grid-template-rows: 1fr;
+}
+.confirm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    color: #717171;
+    background-color: #ededed;
+    border-radius: 24px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+}
+  
+.confirm__title {
+    width: 100%;
+    margin: 30px 0;
+    font-size: 24px;
+    text-align: center;
+}
+  
+.confirm__btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.confirm__btn-cancel {
+    margin-right: 15px;
+}
+.helpdesk {
+    position: relative;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 24px;
+    background-color: #dadada;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+}
+  
+.helpdesk__add-ticket-btn {
+    width: 200px;
+    margin: 20px 20px 0 0;
+    padding: 10px 20px;
+    align-self: flex-end;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    background-color: #ededed;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+  
+.helpdesk__add-ticket-btn:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+  
+.helpdesk__list {
+    width: 100%;
+    overflow: auto;
+}
