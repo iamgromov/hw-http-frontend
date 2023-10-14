@@ -1,0 +1,65 @@
+.ticket-form {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    background-color: #ededed;
+    border-radius: 24px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+ }
+  
+.ticket-form__title {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+  
+.ticket-form__label {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+  
+.ticket-form__input-name {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+  
+.ticket-form__input {
+    height: 50px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    background-color: #ededed;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+}
+  
+.ticket-form__input:focus {
+    outline: none;
+}
+
+  
+.ticket-form__textarea {
+    padding: 15px;
+    resize: none;
+}
+  
+.ticket-form__btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+.ticket-form__btn-cancel {
+    margin-right: 15px;
+}

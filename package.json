@@ -1,0 +1,59 @@
+{
+  "name": "hw-http-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint . --fix",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "author": "thnd3r",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.21.0",
+    "@babel/core": "7.21.3",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/preset-env": "7.20.2",
+    "babel-loader": "9.1.2",
+    "css-loader": "6.7.3",
+    "eslint": "8.36.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jest": "^27.4.2",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "file-loader": "6.2.0",
+    "html-loader": "4.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "image-webpack-loader": "^8.1.0",
+    "jest": "29.5.0",
+    "mini-css-extract-plugin": "2.7.5",
+    "prettier": "2.8.7",
+    "start-server-and-test": "2.0.0",
+    "terser-webpack-plugin": "5.3.7",
+    "url-loader": "4.1.1",
+    "webpack": "5.76.3",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.13.1",
+    "webpack-merge": "5.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamgromov/hw-http-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamgromov/hw-http-frontend/issues"
+  },
+  "homepage": "https://github.com/iamgromov/hw-http-frontend#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
